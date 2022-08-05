@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran');
+
+html {
+  box-sizing: border-box
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 90%;
+  margin: 50px auto;
+  color: rgba(255, 255, 255, 0.7);
+  font: 16px/1 'Catamaran', sans-serif;
+  background: #000000;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+body:after {
+  content: '';
+  display: flex;
+  clear: both;
+}
+
+h1 {
+  font-weight: normal;
+  color: #fff;
+  transition: all .3s ease;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  margin: 150px 0px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1230px;
+  background: rgba(255,255,255,0);
+  flex-direction: row;
+
+}
+h2 {
+  width: 50%;
+  text-align: center;
+  height: 44px;
+  line-height: 24px;
+  font-weight: 400;
+  
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    width: 100%;
+  }
+  h1 {
+    margin-bottom: 30px;
+    line-height: 30px;
+  }
+}
+
+a, a > span {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  line-height: 24px;
+}
+a:before, a:after, a > span:before, a > span:after {
+  content: '';
+  position: absolute;
+  transition: transform .5s ease;
+}
+.hover-1 {
+  padding-top: 10px;
+}
+.hover-1:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #008f0c;
+  transform: scaleX(0);
+}
+.hover-1:hover:before {
+  transform: scaleX(1);
+}
+.hover-2 {
+  padding: 10px;
+}
+.hover-2:before, .hover-2:after {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-color: #008f0c;
+}
+.hover-2:before {
+  border-width: 2px 0 2px 0;
+  transform: scaleX(0);
+}
+.hover-2:after {
+  border-width: 0 2px 0 2px;
+  transform: scaleY(0);
+}
+.hover-2:hover:before, .hover-2:hover:after {
+  transform: scale(1, 1);
+}
+.hover-3 {
+  display: inline-flex;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+.hover-3:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #008f0c;
+  transform: translateX(-100%);
+}
+.hover-3:hover:before {
+  transform: translateX(0);
+}
+.hover-4 {
+  padding: 10px;
+  display: inline-flex;
+  overflow: hidden;
+}
+.hover-4:before, .hover-4:after {
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #008f0c;
+}
+.hover-4:before {
+  bottom: 0;
+  transform: translateX(-100%);
+}
+.hover-4:after {
+  top: 0;
+  transform: translateX(100%);
+}
+.hover-4:hover:before, .hover-4:hover:after {
+  transform: translateX(0);
+}
+.hover-5 {
+  display: inline-block;
+  overflow: hidden;
+}
+.hover-5:before, .hover-5:after {
+  right: 0;
+  bottom: 0;
+  background: #008f0c;
+}
+.hover-5:before {
+  width: 100%;
+  height: 2px;
+  transform: translateX(-100%);
+}
+.hover-5:after {
+  width: 2px;
+  height: 100%;
+  transform: translateY(100%);
+}
+.hover-5 > span {
+  display: flex;
+  padding: 10px;
+}
+.hover-5 > span:before, .hover-5 > span:after {
+  left: 0;
+  top: 0;
+  background: #008f0c;
+}
+.hover-5 > span:before {
+  width: 100%;
+  height: 2px;
+  transform: translateX(100%);
+}
+.hover-5 > span:after {
+  width: 2px;
+  height: 100%;
+  transform: translateY(-100%);
+}
+.hover-5:hover:before, 
+.hover-5:hover:after, 
+.hover-5:hover > span:before, 
+.hover-5:hover > span:after {
+  transform: translate(0, 0);
+}
+.hover-6 {
+  display: inline-flex;
+  overflow: hidden;
+}
+.hover-6:before, .hover-6:after {
+  right: 0;
+  bottom: 0;
+  background: #008f0c;
+  transition: transform .3s ease;
+}
+.hover-6:before {
+  width: 100%;
+  height: 2px;
+  transform: translateX(-100%);
+  transition-delay: .9s;
+}
+.hover-6:after {
+  width: 2px;
+  height: 100%;
+  transform: translateY(100%);
+  transition-delay: .6s;
+}
+.hover-6 > span {
+  display: flex;
+  padding: 10px;
+}
+.hover-6 > span:before,
+ .hover-6 > span:after {
+  left: 0;
+  top: 0;
+  background: #008f0c;
+  transition: transform .3s ease;
+}
+.hover-6 > span:before {
+  width: 100%;
+  height: 2px;
+  transform: translateX(100%);
+  transition-delay: .3s;
+}
+.hover-6 > span:after {
+  width: 2px;
+  height: 100%;
+  transform: translateY(-100%);
+  transition-delay: 0s;
+}
+.hover-6:hover:before,
+ .hover-6:hover:after,
+  .hover-6:hover > span:before,
+   .hover-6:hover > span:after {
+  transform: translate(0, 0);
+}
+.hover-6:hover:before {
+  transition-delay: 0s;
+}
+.hover-6:hover:after {
+  transition-delay: .3s;
+}
+.hover-6:hover > span:before {
+  transition-delay: .6s;
+}
+.hover-6:hover > span:after {
+  transition-delay: .9s;
+}
+.hover-7 {
+  display: inline-block;
+  overflow: hidden;
+}
+.hover-7:before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #008f0c;
+  transform: translateX(-100%);
+}
+.hover-7:after {
+  content: attr(data-content);
+  left: 0;
+  top: 0;
+  width: 0;
+  margin: 12px;
+  color: #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: width .5s ease;
+}
+.hover-7 > span {
+  display: block;
+  margin: 2px;
+  padding: 10px;
+}
+.hover-7:hover:before {
+  transform: translateX(0);
+}
+.hover-7:hover:after {
+  width: calc(100% - 24px);
+}
+.hover-8 {
+  display: inline-flex;
+  overflow: hidden;
+}
+.hover-8:before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #008f0c;
+  transform: translateY(-100%);
+}
+.hover-8:after {
+  content: attr(data-content);
+  top: 0;
+  left: 0;
+  height: 0;
+  margin: 12px;
+  color: #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: height .5s ease;
+}
+.hover-8 > span {
+  display: block;
+  margin: 2px;
+  padding: 10px;
+}
+.hover-8:hover:before {
+  transform: translateY(0);
+}
+.hover-8:hover:after {
+  height: calc(100% - 24px);
+}
+.footer {text-align: center;}
+.footer a {color:#000000;}
