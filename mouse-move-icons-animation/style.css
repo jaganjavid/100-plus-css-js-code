@@ -1,0 +1,33 @@
+body{
+    background-color: #111111;
+}
+.pointer{
+	position:absolute;
+	top:50%;
+	left:50%;
+	color:#00ff2f;
+	font-size:40px;
+	user-select:none;
+	transform:translate(-50%, -50%);
+	width:40px;
+	height:40px;
+	pointer-events: none;
+	box-sizing:border-box;
+	transition:0.2s;
+}
+
+.pointer1{
+	transition:0.05s;
+}
+.pointer2{
+	transition:0.1s;
+}
+.pointer3{
+	transition:0.15s;
+}
+.pointer4{
+	transition:0.2s;
+}
+.pointer5{
+	transition:0.25s;
+}
