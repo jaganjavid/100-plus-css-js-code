@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=cyrillic");
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.overlay {
+    height: 200vw;
+    width: 200vw;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav {
+    background-color: #fff;
+    padding: 12px 5px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px rgba(179, 179, 179, 0.185);
+    position: relative;
+    z-index: 99;
+}
+
+.tabs {
+    display: flex;
+    width: 490px;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.tab {
+    padding: 12px 22px;
+    background-color: #e0efff;
+    color: #58a6ff;
+    margin-right: 15px;
+    border-radius: 55px;
+    text-align: center;
+    white-space: nowrap;
+    transition: 0.3s ease;
+    overflow: hidden;
+    max-width: 0px;
+    cursor: pointer;
+    position: relative;
+    flex-basis: 120px;
+}
+
+.tab-is-active {
+    max-width: 100px;
+    box-shadow: 7px 7px 15px rgba(124, 124, 124, 0.096);
+}
+
+.tab-is-active .tab-name {
+    opacity: 1;
+}
+
+.tab-circle {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #95c5fd;
+    z-index: 10;
+    opacity: 0;
+    left: 30px;
+    pointer-events: none;
+}
+
+.tab-icon {
+    margin-right: 1px;
+    font-size: 18px;
+    vertical-align: middle;
+    position: relative;
+    right: 6.7px;
+    top: -1px;
+}
+
+.tab-name {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    top: 1px;
+    opacity: 0;
+}
+
+.tab-bookmark {
+    background: #3330E4;
+    color: #ffffff;
+}
+
+.tab-burn {
+    background: #F637EC;
+    color: #ffffff;
+}
+
+
+.tab-clipboard {
+    background: #FFC600;
+    color: #ffffff;
+}
+
+.tab-comment {
+    background: #3EC70B;
+    color: #ffffff;
+}
+.tab-bell {
+    background: #FF5403;
+    color: #ffffff;
+}

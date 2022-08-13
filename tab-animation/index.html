@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Animation</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+
+
+    <div class="overlay"></div>
+    <div class="nav">
+      <ul class="tabs">
+        <li class="tabs-item tab tab-comment tab-is-active">
+          <div class="tab-circle"></div>
+          <i class="fa fa-comment tab-icon"></i>
+          <span class="tab-name">Comment</span>
+        </li>
+        
+        <li class="tabs-item tab tab-clipboard">
+          <div class="tab-circle"></div>
+          <i class="fa fa-clipboard tab-icon"></i>
+          <span class="tab-name">Clipboard</span>
+        </li>
+        <li class="tabs-item tab tab-burn">
+          <div class="tab-circle"></div>
+          <i class="fa fa-cloud-upload tab-icon" ></i>
+          <span class="tab-name">Upload</span>
+        </li>
+        <li class="tabs-item tab tab-bell">
+          <div class="tab-circle"></div>
+          <i class="fa fa-bell tab-icon"></i>
+          <span class="tab-name">Notifications</span>
+        </li>
+        <li class="tabs-item tab tab-bookmark ">
+          <div class="tab-circle"></div>
+          <i class="fa fa-bookmark tab-icon"></i>
+          <span class="tab-name">Bookmark</span>
+        </li>
+        
+      </ul>
+    </div>
+  <!-- gsap CDN -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script src="./app.js"></script>
+</body>
+</html>
