@@ -1,0 +1,22 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #151719;
+}
+button{
+  background-color: green;
+  box-shadow: #ffffff 4px 4px 0px;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 25px 50px;
+  border: none;
+  cursor: pointer;
+}
+
+button:active{
+  transform: translateY(4px)
+   translateX(4px);
+  box-shadow: #094c66 0px 0px 0px;
+}
